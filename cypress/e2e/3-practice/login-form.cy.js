@@ -10,7 +10,7 @@ it('Username field verifying - error when field is empty', () => {
     cy.get('[data-test="error"]').should('have.text','Epic sadface: Username is required');
 
 });
-it('Password field verifying- error when field is empty', () => {
+it('Password afield verifying- error when field is empty', () => {
     cy.get('[data-test="username"]').type('svsvfs',{delay:500});
     cy.get('[data-test="login-button"]').click();
     cy.get('[data-test="error"]').should('have.text','Epic sadface: Password is required');
@@ -30,4 +30,5 @@ it('Key test', () => {
 
 });
 
-})
+}) 
+
